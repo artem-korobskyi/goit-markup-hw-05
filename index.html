@@ -21,7 +21,7 @@
 				<!-- Навигация на другие страницы -->
 				<nav class="navigation">
 				<ul class="site-nav list">
-					<li class="item"><a href="./index.html" class="link-current">Studio</a></li>
+					<li class="item"><a href="./index.html" class="item-index link-current">Studio</a></li>
 					<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
 					<li class="item"><a href="" class="link">Contacts</a></li>
 				</ul>
@@ -39,7 +39,16 @@
 			<section class="hero">
 				<div class="container">
 				<h1 class="hero-title">Effective Solutions for Your Business</h1>
-				<button class="button" type="button">Order Service</button>
+				<button class="button" type="button" data-modal-open>Order Service</button>
+				</div>
+				<div class="backdrop is-hidden" data-modal>
+					<div class="modal">
+						<button class="modal-close" data-modal-close>
+							<svg class="icon-modal-close" width="8" height="8">
+								<use href="./image/icons.svg#icon-modal"></use>
+							</svg>
+						</button>
+						</div>
 				</div>
 			</section>
 			<section class="advan-sec section">
@@ -314,7 +323,7 @@
 			</p>
 			</div>
 			<div class="footer-social">
-				<h4 class="footer-social-title">Social media</h4>
+				<p class="footer-social-title">Social media</p>
 				<ul class="footer-social-list list">
 					<li class="footer-icon-item">
 									<a class="footer-icon" href="https://www.instagram.com/">
@@ -348,5 +357,6 @@
 			</div>
 			</div>
 		</footer>
+		<script src="./modal.js"></script>
 	</body>
 </html>
